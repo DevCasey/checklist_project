@@ -15,6 +15,8 @@ body {
 
   }
 
+
+
 .greeting {
     grid-column: 1/3;
     border: 1px solid black;
@@ -24,11 +26,72 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
 
+
 }
 
 .to-do {
-    border: 1px solid black;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr 2fr;
 }
+
+.to-do > input {
+    grid-column: 1/2;
+}
+
+.checkbox1  {
+    grid-row: 2/3;
+
+}
+
+.first-todo {
+    grid-column: 2/5;
+    grid-row: 2/3
+}
+
+.checkbox2 {
+    
+    grid-row: 3/4;
+}
+
+.second-todo {
+    grid-column: 2/5;
+    grid-row: 3/4;
+}
+
+.checkbox3 {
+    grid-row: 4/5;
+}
+
+.third-todo {
+    grid-column: 2/5;
+    grid-row: 4/5;
+}
+
+.checkbox4 {
+    grid-row: 5/6;
+}
+
+.fourth-todo {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.checkbox5 {
+    grid-row: 6/7;
+}
+
+.fifth-todo {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+
+/* .to-do {
+    grid-column: 2;
+    border: 1px solid black;
+} */
 
 .clock-date {
     border: 1px solid black
@@ -43,5 +106,3 @@ body {
     border: 1px solid black;
 }
 
-.check-box {
-    
