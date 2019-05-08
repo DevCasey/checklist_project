@@ -1,5 +1,5 @@
 body {
-    background: url('/background_img.jpg');
+    background: url('background_img.jpg');
     background-size: cover;
 }
 
@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    background: url('/clock.jpg');
+    background: url('clock.jpg');
     background-size: cover;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .to-do {
-    background: url('/checklist2.jpg');
+    background: url('checklist2.jpg');
     background-size: cover;
     height: auto;
     display: grid;
