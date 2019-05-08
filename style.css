@@ -15,6 +15,18 @@ body {
 
   }
 
+.clock-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background: url('/clock.jpg');
+    background-size: cover;
+}
+
+
+
+
+
 
 
 .greeting {
@@ -42,11 +54,37 @@ body {
 }
 
 .to-do > input {
-    grid-column: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+    width: 50px;
+    height: 25px;
 }
 
+
+.top-date {
+    color: white;
+    font-size: 3em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: end;
+    
+
+}
+
+.bottom-date {
+    color: white;
+    font-size: 3em;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+}
+
+
 .to-do > div {
-    grid-column: 2/5;
+    grid-column: 3/5;
+    align-self: center;
 }
 
 .checkbox1  {
@@ -98,10 +136,6 @@ body {
     grid-row: 6/7;
 }
 
-
-.clock-date {
-    border: 1px solid black
-}
 
 .calculator {
     border: 1px solid black;
