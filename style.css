@@ -77,8 +77,8 @@ body {
     justify-self: start;
 }
 
-.top-month {
-    color:white;
+.top-day {
+    color: white;
     grid-column: 4/5;
     grid-row: 3/4;
     font-size: 1em;
@@ -86,7 +86,7 @@ body {
     padding-left: 10px;
 }
 
-.bottom-day {
+.bottom-month {
     color: white;
     grid-column: 3/4;
     grid-row: 4/5;
@@ -177,4 +177,3 @@ body {
     grid-column: 1/3;
     border: 1px solid black;
 }
-
