@@ -34,10 +34,15 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    border: 1px solid black;
 }
 
 .to-do > input {
     grid-column: 1/2;
+}
+
+.to-do > div {
+    grid-column: 2/5;
 }
 
 .checkbox1  {
@@ -45,8 +50,10 @@ body {
 
 }
 
+
+
 .first-todo {
-    grid-column: 2/5;
+    /* grid-column: 2/5; */
     grid-row: 2/3
 }
 
@@ -56,7 +63,7 @@ body {
 }
 
 .second-todo {
-    grid-column: 2/5;
+    /* grid-column: 2/5; */
     grid-row: 3/4;
 }
 
@@ -65,7 +72,7 @@ body {
 }
 
 .third-todo {
-    grid-column: 2/5;
+    /* grid-column: 2/5; */
     grid-row: 4/5;
 }
 
@@ -74,7 +81,7 @@ body {
 }
 
 .fourth-todo {
-    grid-column: 2/3;
+    /* grid-column: 2/5; */
     grid-row: 5/6;
 }
 
@@ -83,15 +90,10 @@ body {
 }
 
 .fifth-todo {
-    grid-column: 2/3;
+    /* grid-column: 2/5; */
     grid-row: 6/7;
 }
 
-
-/* .to-do {
-    grid-column: 2;
-    border: 1px solid black;
-} */
 
 .clock-date {
     border: 1px solid black
