@@ -1,5 +1,6 @@
 body {
-    background: #676767;
+    background: url('/background_img.jpg');
+    background-size: cover;
 }
 
 .main-container {
