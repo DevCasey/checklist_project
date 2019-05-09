@@ -16,14 +16,7 @@ body {
 
   }
 
-.clock-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    background: url('clock.jpg');
-    background-size: cover;
-}
-
+/* -- Greeting -- */
 .greeting-container {
     display: grid;
     background: #3e3e3e;
@@ -37,6 +30,18 @@ body {
     font-size: 3em;
     color: white;
 }
+/* -- Greeting End -- */
+
+
+
+/* -- Date and Time -- */
+.clock-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background: url('clock.jpg');
+    background-size: cover;
+}
 
 .clock-calc-container {
     display: grid;
@@ -47,7 +52,6 @@ body {
 .calculator-container {
     background: url('board.jpg');
     background-size: cover;
-    /* border: 1px solid white; */
     border-top: 1px solid white;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr;
@@ -111,10 +115,10 @@ body {
     justify-self: center;
     font-size: 2em;
 }
+/* -- Date and Time end -- */
 
 
 /* -- Calculator -- */
-
 .calculator-display {
     grid-column: 3/7;
     color: white;
@@ -159,29 +163,28 @@ body {
     border-radius: 30px;
 }
 
+.equals, .plus, .minus, .product, .divide {
+    grid-column: 6/7;
+}
+
 .equals {
     grid-row: 6/7;
-    grid-column: 6/7;
 }
 
 .plus {
     grid-row: 5/6;
-    grid-column: 6/7;
 }
 
 .minus {
     grid-row: 4/5;
-    grid-column: 6/7;
 }
 
 .product {
     grid-row: 3/4;
-    grid-column: 6/7;
 }
 
 .divide {
     grid-row: 2/3;
-    grid-column: 6/7;
 }
 
 .number0 {
@@ -207,6 +210,8 @@ body {
     grid-column: 4/5;
 }
 /* -- End of calculator -- */
+
+
 
 /* -- To do list start -- */
 .to-do {
@@ -234,50 +239,32 @@ body {
     align-self: center;
 }
 
-.checkbox1  {
+.checkbox1, .first-todo  {
     grid-row: 2/3;
 
 }
 
-.first-todo {
-    grid-row: 2/3
-}
 
-.checkbox2 {
-    
+.checkbox2, .second-todo {
     grid-row: 3/4;
 }
 
-.second-todo {
-    grid-row: 3/4;
-}
-
-.checkbox3 {
+.checkbox3, .third-todo {
     grid-row: 4/5;
 }
 
-.third-todo {
-    grid-row: 4/5;
-}
-
-.checkbox4 {
+.checkbox4, .fourth-todo {
     grid-row: 5/6;
 }
 
-.fourth-todo {
-    grid-row: 5/6;
-}
-
-.checkbox5 {
+.checkbox5, .fifth-todo {
     grid-row: 6/7;
 }
 
-.fifth-todo {
-    grid-row: 6/7;
-}
+/* -- To do end -- */
 
 
-
+/*-- Footer -- */
 .footer {
     grid-column: 1/3;
     background: grey;
@@ -285,12 +272,9 @@ body {
     /* border: 1px solid black; */
 }
 
-/* -- To do end -- */
-
-
-
 .home-link, .github-link, .linkedin-link {
     text-decoration: none;
     align-self: center;
     color: black;
 }
+/* -- End of Footer -- */
