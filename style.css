@@ -278,3 +278,11 @@ body {
     color: black;
 }
 /* -- End of Footer -- */
+
+
+@media screen and (max-width:580px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
