@@ -29,6 +29,23 @@ body {
 .greeting {
     font-size: 3em;
     color: white;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    animation:
+        typing 3.5s steps(60, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {width:0}
+    to {width: 50%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    20% {border-color: orange;}
 }
 /* -- Greeting End -- */
 
@@ -208,6 +225,10 @@ body {
 
 .number2, .number5, .number8, .plus-minus {
     grid-column: 4/5;
+}
+
+.calculator-container > div:hover {
+    background: grey;
 }
 /* -- End of calculator -- */
 
