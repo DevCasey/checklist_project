@@ -272,10 +272,22 @@ body {
     /* border: 1px solid black; */
 }
 
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    
+}
+
 .home-link, .github-link, .linkedin-link {
     text-decoration: none;
     align-self: center;
     color: black;
+}
+
+.footer-flex > a:hover {
+    color:white;
 }
 /* -- End of Footer -- */
 
